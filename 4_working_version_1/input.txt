@@ -1,0 +1,79 @@
+int y, z;
+int pri(int y) {
+    int k;
+    comein >> k;
+    return k * y + 1;
+}
+
+nothing init(int y, string s) {
+    y = 10;
+    return;
+}
+
+bool q1;
+
+int g(double d) {
+    return 1+1^1;
+    return 1+1^1;
+    return 1+1^1;
+    return 1+1^1;
+    return 1+1^1;
+}
+string str;
+
+int main() {
+    
+    for (y = 7; y < 10 ; ++y) {
+        goout << y << "\n";
+        break;
+        int j;
+        for (j = 0; j < 10; ++j)
+            break;
+    }
+    init(1, "abacaba");
+    pri(1);
+    string s;
+    s = "It is our translaTOR";
+    goout << s[3] << "\n";
+    
+    double d;
+    d = 1234567.9876543;
+    goout << d << "\n";
+    int a;
+    a = 1;
+    {
+        int x;
+        x = 3;
+        bool t;
+        t = t || !!!!t;
+        x = g(1.) = --++x;
+        x = 1 = ~x;
+        x %= 4;
+        goout << x % 3;
+    }
+    a = ~pri(5 + 7*g(49.0*d + 56.0) + pri(1))*g(d / d);
+    string name;
+    comein >> name;
+    goout << "Hello, " << name << "\n";
+
+    int z;
+    z = ((y) + y);
+    int v;
+    v = z - z * 3 / 4 ^ 5 & (z--)+++ 1^ 300;
+
+    witch {}
+
+    witch {
+        v < 3:
+            goout << 1;
+        z == 5:
+            goout << 2;
+    }
+    a = 5;
+    "123"[0];
+    if (true)
+        goout << "It is true" << "\n";
+    elf (false)
+        goout << false << "\n";
+    return 0;
+}

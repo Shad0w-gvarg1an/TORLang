@@ -1,0 +1,2 @@
+g++ Stack.h Node.h Lexems.h Lexems.cpp Scanner.h Scanner.cpp Parser.h Parser.cpp main.cpp
+g++ Lexems.h Lexems.cpp Node.h state_machine_generation.cpp

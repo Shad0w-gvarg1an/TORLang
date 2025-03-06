@@ -1,0 +1,71 @@
+create_TID
+level of y 1
+
+0
+level of z 1
+y 
+1
+create_TID
+level of y 2
+
+0
+create_TID
+del_TID
+del_TID
+create_TID
+level of x 2
+
+0
+level of nth 2
+x 
+1
+level of k 2
+x nth 
+2
+del_TID
+create_TID
+create_TID
+create_TID
+level of y 4
+
+0
+del_TID
+level of y 3
+
+0
+create_TID
+del_TID
+create_TID
+create_TID
+del_TID
+del_TID
+level of s 3
+y 
+1
+level of d 3
+y s 
+2
+level of a 3
+y s d 
+3
+level of name 3
+y s d a 
+4
+level of z 3
+y s d a name 
+5
+level of v 3
+y s d a name z 
+6
+create_TID
+del_TID
+create_TID
+del_TID
+create_TID
+del_TID
+create_TID
+del_TID
+del_TID
+del_TID
+del_TID
+

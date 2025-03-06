@@ -1,0 +1,127 @@
+#ifndef LEXEMS_H 
+#define LEXEMS_H
+
+#include <vector>
+#include <string>
+#include <iostream>
+#include <algorithm>
+#include <cassert>
+using namespace std;
+
+enum Type_of_lex {
+    LEX_FIN, LEX_SEMICOLON, 
+    LEX_COMMA, LEX_LEFT_BRACE, 
+	LEX_RIGHT_BRACE, LEX_LEFT_CURLY, 
+	LEX_RIGHT_CURLY, LEX_COLON,
+    LEX_EQUAL, LEX_PLUS_EQUAL, 
+	LEX_MINUS_EQUAL, LEX_MUL_EQUAL, 
+	LEX_DIV_EQUAL, LEX_MOD_EQUAL, 
+	LEX_OR_EQUAL, LEX_AND_EQUAL, 
+	LEX_LEFT_SHIFT_EQUAL, 
+	LEX_RIGHT_SHIFT_EQUAL, 
+    LEX_OR, LEX_AND, LEX_BITWISE_OR, 
+	LEX_BITWISE_XOR, LEX_BITWISE_AND,
+    LEX_EQUALS, LEX_NOT_EQUALS, 
+	LEX_LESS, LEX_GREATER, 
+	LEX_LESS_OR_EQUALS, 
+	LEX_GREATER_OR_EQUALS, 
+	LEX_LEFT_SHIFT, 
+	LEX_RIGHT_SHIFT, LEX_PLUS, 
+	LEX_MINUS, LEX_MUL, LEX_DIV, 
+	LEX_MOD, LEX_INCR, 
+	LEX_DECR, LEX_NOT, 
+	LEX_BITWISE_NOT, 
+	LEX_SIZEOF,
+	LEX_LEFT_SQUARE_BRACE, 
+	LEX_RIGHT_SQUARE_BRACE, 
+    LEX_COMEIN, LEX_GOOUT, 
+	LEX_STRING_LITERAL, 
+	LEX_INT_LITERAL, 
+	LEX_BOOLEAN_LITERAL, 
+	LEX_DOUBLE_LITERAL, 
+    LEX_NOTHING, LEX_INT, 
+	LEX_BOOL, LEX_STRING, 
+	LEX_DOUBLE, LEX_CALL,
+    LEX_FOR, LEX_WHILE, 
+	LEX_IF, LEX_ELSE, 
+	LEX_WITCH, LEX_ELF, 
+	LEX_BREAK, LEX_CONTINUE, 
+	LEX_RETURN, LEX_DO,
+    LEX_IDENT, LEX_GO, LEX_TGO,
+	LEX_FGO, LEX_GOTO,
+	UNKNOWN, BLANK, LEX_GETINDEX,
+	LEX_START_FUNC, LEX_END_FUNC,
+    LEX_PARAMS, LEX_FUNC
+};
+
+void printLex(Type_of_lex);
+void printFirst(const vector<Type_of_lex>&);
+
+
+static const std::vector<std::pair<Type_of_lex, std::string>> lexem_lst = {
+    { LEX_FIN, string(1, EOF) },
+	{ LEX_SEMICOLON, ";" },
+	{ LEX_COMMA, "," },
+	{ LEX_LEFT_BRACE, "(" },
+	{ LEX_RIGHT_BRACE, ")" },
+	{ LEX_LEFT_CURLY, "{" },
+	{ LEX_RIGHT_CURLY, "}" },
+	{ LEX_COLON, ":" },
+	{ LEX_EQUAL, "=" },
+	{ LEX_PLUS_EQUAL, "+=" },
+	{ LEX_MINUS_EQUAL, "-="  },
+	{ LEX_MUL_EQUAL, "*="  },
+    { LEX_DIV_EQUAL, "/=" },
+    { LEX_MOD_EQUAL, "%=" },
+	{ LEX_OR_EQUAL, "|=" },
+	{ LEX_AND_EQUAL, "&=" },
+	{ LEX_LEFT_SHIFT_EQUAL, "<<=" },
+	{ LEX_RIGHT_SHIFT_EQUAL, ">>=" },
+	{ LEX_OR, "||" },
+	{ LEX_AND, "&&"  },
+	{ LEX_BITWISE_OR, "|"  },
+	{ LEX_BITWISE_XOR, "^"  },
+	{ LEX_BITWISE_AND, "&" },
+	{ LEX_EQUALS, "==" },
+	{ LEX_NOT_EQUALS, "!=" },
+	{ LEX_LESS, "<"  },
+	{ LEX_GREATER, ">"  },
+	{ LEX_LESS_OR_EQUALS, "<=" },
+	{ LEX_GREATER_OR_EQUALS, ">=" },
+	{ LEX_LEFT_SHIFT, "<<" },
+	{ LEX_RIGHT_SHIFT, ">>" },
+	{ LEX_PLUS, "+"  },
+	{ LEX_MINUS, "-" },
+	{ LEX_MUL, "*"  },
+	{ LEX_DIV, "/" },
+	{ LEX_MOD, "%"  },
+	{ LEX_INCR, "++" },
+	{ LEX_DECR, "--" },
+	{ LEX_NOT, "!"  },
+	{ LEX_BITWISE_NOT, "~" },
+	{ LEX_SIZEOF, "sizeof" },
+	{ LEX_LEFT_SQUARE_BRACE, "[" },
+	{ LEX_RIGHT_SQUARE_BRACE, "]" },
+	{ LEX_COMEIN, "comein" },
+	{ LEX_GOOUT, "goout" },
+	{ LEX_NOTHING, "nothing" },
+	{ LEX_INT, "int" },
+	{ LEX_BOOL, "bool" },
+	{ LEX_STRING, "string" },
+	{ LEX_DOUBLE, "double" },
+    { LEX_FOR, "for" },
+    { LEX_WHILE, "while" },
+    { LEX_DO, "do" },
+    { LEX_IF, "if" }, 
+    { LEX_ELSE, "else" }, 
+    { LEX_WITCH, "witch" }, 
+    { LEX_ELF, "elf" }, 
+    { LEX_BREAK, "break" }, 
+    { LEX_CONTINUE, "continue" }, 
+    { LEX_RETURN, "return" },
+    { LEX_BOOLEAN_LITERAL, "true"},
+    { LEX_BOOLEAN_LITERAL, "false"}
+};
+
+
+#endif
